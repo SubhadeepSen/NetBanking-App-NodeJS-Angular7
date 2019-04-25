@@ -1,0 +1,16 @@
+{
+    "app-name": "Banking Applicaion - Development",
+    "transaction-service-config":{
+        "protocol" : "http://",
+        "host": "localhost:",
+        "port": 8081,
+        "base": "/bankingapp/api/transaction",
+        "uri":"/logtransactionsummary"
+    },
+    "mongodb-config":{
+        "protocol": "mongodb://",
+        "host": "127.0.0.1:",
+        "port": 27017,
+        "db": "/db"
+    }
+}

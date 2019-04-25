@@ -1,0 +1,32 @@
+//generate PDF statement
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
+
+//Definition of the pdf file: http://pdfmake.org/playground.html
+var docDefinition = {
+	content: [
+		'First paragraph',
+		'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines'
+	]
+};
+
+const pdfDoc = pdfMake.createPdf(docDefinition);
+
+//sending pdf doc for getting download
+/*pdfDoc.getBase64((data) => {
+	response.writeHead(200, {
+		'Content-Type': 'application/pdf',
+		'Content-Disposition': 'attachment;filename="statement.pdf"'
+	});
+	const download = Buffer.from(data.toString('utf-8'), 'base64');
+	response.end(download);
+});*/
+
+//sending buffer data only, not downloadable
+const buffer = Buffer.from(pdfDoc.toString('utf-8')).toJSON();
+response.send({buffer: buffer.data});
+
+//Creating the buffer object back from buffer data
+/*const jsonBuffer = {"type":"Buffer","data":[91,111,98,106,101,99,116,32,79,98,106,101,99,116,93]}
+let bufferOriginal = Buffer.from(jsonBuffer);
+console.log(bufferOriginal.toString('utf-8').toJSON());*/
+

@@ -1,0 +1,780 @@
+{
+	"id": "3a8f4a22-be71-d569-772b-94037d9ec631",
+	"name": "Banking-API",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Account-Service",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"order": [
+				"35ff12f4-558b-57d8-23f7-8b19ebabfdc2",
+				"38f3ab14-d1c1-ebd0-43ae-2be04a815225",
+				"0853bb07-8ded-a0f4-b6ed-d7140f9dad9e",
+				"f7805cdf-94cc-7138-ce11-b0e057b9f971",
+				"3b78185a-2ab9-73d7-df6c-29ff271b7bd7",
+				"5d61abe0-0dc5-6202-3c53-cd45f5663592",
+				"8d60e49e-6008-6648-fc18-4a87e0682cb1",
+				"0a633141-56fb-fa8e-05dc-5dad2967cd4d",
+				"ff3e5da9-e0b4-30a5-d696-cf0f784c6845",
+				"c243655d-f9d0-4f70-6ead-8c187d135699"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "3cc87c76-4037-758b-64b0-4761b40124e6"
+		},
+		{
+			"name": "Transaction-Service",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"order": [
+				"cde0b189-e1a4-d11d-e39d-f1402da6bcc6",
+				"d344c649-5cbe-6a47-1857-884ac59e8eb8",
+				"b0fe3220-2b4c-6ab4-0b7c-3be5b600aab5"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "c4b7a17c-5ae9-9510-1a80-3726bb0803e8"
+		},
+		{
+			"name": "User-Service",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"order": [
+				"b039cd71-8930-4b75-d435-8cafbae715a7",
+				"51b469c8-2acb-b84d-95b3-1024a7a93199",
+				"01e5cc64-1824-c17f-bcd2-ae2c13b4e3c0",
+				"821bf5d8-ca21-8546-921b-1456597bc7df",
+				"4007c882-4e51-f8a9-e1e8-77b54a362b03",
+				"ce93dfbf-976b-7a85-3421-7ee2ecf5b6f2",
+				"b83526a7-10e8-0b2e-2c1e-399a617d4706",
+				"dcda2bdd-d823-cff1-8772-0c53e92f386e"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "ebad6627-10d8-ce2e-64f0-67549da02c3e"
+		}
+	],
+	"folders_order": [
+		"ebad6627-10d8-ce2e-64f0-67549da02c3e",
+		"3cc87c76-4037-758b-64b0-4761b40124e6",
+		"c4b7a17c-5ae9-9510-1a80-3726bb0803e8"
+	],
+	"timestamp": 1551121832633,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "01e5cc64-1824-c17f-bcd2-ae2c13b4e3c0",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/updateaddress",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843626163,
+			"name": "Update Address",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"address\": {\n        \"firstline\": \"pride home\",\n        \"secondline\": \"miyapur\",\n        \"city\": \"Hyderabad\",\n        \"country\": \"India\",\n        \"pin\": \"500032\"\n    },\n    \"username\": \"sunny123\"\n}"
+		},
+		{
+			"id": "0853bb07-8ded-a0f4-b6ed-d7140f9dad9e",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/deletepayee",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552846723037,
+			"name": "Delete Payee",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"accountNo\": \"452300011000\",\n\t\"payee\" : {\n\t\t\"firstname\": \"Sunny\",\n\t\t\"lastname\": \"Sen\",\n\t\t\"accountNo\": \"452300011001\"\t\n\t}\n}"
+		},
+		{
+			"id": "0a633141-56fb-fa8e-05dc-5dad2967cd4d",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/getaccountdetails/452300011000",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552845070546,
+			"name": "Account Details",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": []
+		},
+		{
+			"id": "35ff12f4-558b-57d8-23f7-8b19ebabfdc2",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/createnewaccount",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552851088100,
+			"name": "Create New Account",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"sunny124\",\n\t\"closingBalance\": \"500\"\n}"
+		},
+		{
+			"id": "38f3ab14-d1c1-ebd0-43ae-2be04a815225",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/addpayee",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552846732600,
+			"name": "Add Payee",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"accountNo\": \"452300011000\",\n\t\"payee\" : {\n\t\t\"firstname\": \"Sunny\",\n\t\t\"lastname\": \"Sen\",\n\t\t\"accountNo\": \"452300011001\"\t\n\t}\n}"
+		},
+		{
+			"id": "3b78185a-2ab9-73d7-df6c-29ff271b7bd7",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/closeaccount",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552844902571,
+			"name": "Close Account",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"accountNo\": \"452300011000\"\n}"
+		},
+		{
+			"id": "4007c882-4e51-f8a9-e1e8-77b54a362b03",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/updateemail",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843717079,
+			"name": "Update Email",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"sunny123\",\n    \"emailId\": \"new@gmail.com\"\n}"
+		},
+		{
+			"id": "51b469c8-2acb-b84d-95b3-1024a7a93199",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/validateuser",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843569800,
+			"name": "Validate User",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"sunny123\",\n\t\"password\": \"Sunny@123\"\n}"
+		},
+		{
+			"id": "5d61abe0-0dc5-6202-3c53-cd45f5663592",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/openclosedaccount",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552844936803,
+			"name": "Open Closed Account",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"accountNo\": \"452300011000\"\n}"
+		},
+		{
+			"id": "821bf5d8-ca21-8546-921b-1456597bc7df",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/updatephoneno",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843664759,
+			"name": "Update Phone No",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"sunny123\",\n    \"phoneNo\": \"1234567890\"\n}"
+		},
+		{
+			"id": "8d60e49e-6008-6648-fc18-4a87e0682cb1",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/transferamount",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552847694401,
+			"name": "Transfer Amount",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"from\":{\n\t\t\"accountNo\": \"452300011000\",\n\t\t\"amount\": \"300\"\n\t},\n\t\"to\":{\n\t\t\"accountNo\": \"452300011001\",\n\t\t\"amount\": \"300\"\n\t},\n\t\"remark\": \"new transaction\"\n}"
+		},
+		{
+			"id": "b039cd71-8930-4b75-d435-8cafbae715a7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/register",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843052143,
+			"name": "Register User",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstname\": \"Sunny\",\n    \"lastname\": \"Sen\",\n    \"emailId\": \"xyz@gmail.com\",\n    \"dateOfBirth\": \"2018-08-28\",\n    \"username\": \"sunny123\",\n    \"password\": \"Sunny@123\",\n    \"phoneNo\": \"8425796412\",\n    \"address\": {\n        \"firstline\": \"pride home\",\n        \"secondline\": \"gachibowli\",\n        \"city\": \"Hyderabad\",\n        \"country\": \"India\",\n        \"pin\": \"500032\"\n    }\n}"
+		},
+		{
+			"id": "b0fe3220-2b4c-6ab4-0b7c-3be5b600aab5",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/transaction/generatestatement/452300011000",
+			"folder": "c4b7a17c-5ae9-9510-1a80-3726bb0803e8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843879362,
+			"name": "Generate Statement",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": []
+		},
+		{
+			"id": "b83526a7-10e8-0b2e-2c1e-399a617d4706",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/getuserbyusername/sunny123",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843586371,
+			"name": "User Details By Username",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "c243655d-f9d0-4f70-6ead-8c187d135699",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/lastactivated/452300011000",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552844885483,
+			"name": "Last Activated Status",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": []
+		},
+		{
+			"id": "cde0b189-e1a4-d11d-e39d-f1402da6bcc6",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/transaction/logtransactionsummary",
+			"folder": "c4b7a17c-5ae9-9510-1a80-3726bb0803e8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843859393,
+			"name": "Log Transaction Summary",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"amount\": \"500\",\n\t\"transferedOn\": \"2018-07-09\",\n\t\"to\": \"452300011003\",\n\t\"from\": \"452300011000\",\n\t\"remark\":\"hello\"\n}"
+		},
+		{
+			"id": "ce93dfbf-976b-7a85-3421-7ee2ecf5b6f2",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/updatepassword",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843754191,
+			"name": "Update Password",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"emailId\": \"new@gmail.com\",\n    \"dateOfBirth\": \"2018-08-28\",\n    \"username\": \"sunny123\",\n    \"password\": \"hello@123\"\n}"
+		},
+		{
+			"id": "d344c649-5cbe-6a47-1857-884ac59e8eb8",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/transaction/transactionsummary/452300011000",
+			"folder": "c4b7a17c-5ae9-9510-1a80-3726bb0803e8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552850450053,
+			"name": "Transaction Summary",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": []
+		},
+		{
+			"id": "dcda2bdd-d823-cff1-8772-0c53e92f386e",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQzNTcxfQ.JdtSoEKDGdw4FJHpPUenx67AFj-kIYYoyONyNEllzys",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/user/getuserbyphoneno/1234567890",
+			"folder": "ebad6627-10d8-ce2e-64f0-67549da02c3e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552843821267,
+			"name": "User Details By Phone No",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": []
+		},
+		{
+			"id": "f7805cdf-94cc-7138-ce11-b0e057b9f971",
+			"headers": "Content-Type: application/json\nx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/updatelastactivated",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552844867682,
+			"name": "Update Last Activated Status",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": [],
+			"rawModeData": "{\n\t\"accountNo\": \"452300011000\"\n}"
+		},
+		{
+			"id": "ff3e5da9-e0b4-30a5-d696-cf0f784c6845",
+			"headers": "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA\n",
+			"headerData": [
+				{
+					"key": "x-auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bm55MTIzIiwiaWF0IjoxNTUyODQ0NjY0fQ.fgL6-4bYLeSZ0P7YuY3AoTlqcYg7y39oBbO8xbiOqvA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/bankingapp/api/account/getpayees/452300011000",
+			"folder": "3cc87c76-4037-758b-64b0-4761b40124e6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1552844754760,
+			"name": "Payee List",
+			"description": "",
+			"collectionId": "3a8f4a22-be71-d569-772b-94037d9ec631",
+			"responses": []
+		}
+	]
+}

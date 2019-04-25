@@ -1,0 +1,61 @@
+// playground requires you to assign document definition to a variable called dd
+
+var dd = {
+	pageSize: 'A4',
+	content: [
+		{text: 'Statement', style: 'header', alignment: 'center'},
+		{
+			style: 'table',
+			table: {
+				body: [
+					[
+					    {text: 'Date', style: 'tableHeader'}, 
+					    {text: 'Transaction Details', style: 'tableHeader'}, 
+					    {text: 'Amount', style: 'tableHeader'}
+					],
+					[
+    					{text: '12/12/2019', style: 'textStyle'}, 
+    					{text: 'From xxx to yyyy', style: 'textStyle'}, 
+    					{text: '1225.45', style: 'textStyle'}
+					],
+					[
+    					{text: '12/12/2018', style: 'textStyle'}, 
+    					{text: 'From xxx to yyyy', style: 'textStyle'}, 
+    					{text: '425.45', style: 'textStyle'}
+					]
+				]
+			}
+		},
+	],
+	styles: {
+		header: {
+			fontSize: 24,
+			bold: true,
+			margin: [0, 0, 0, 10],
+			
+		},
+		tableHeader: {
+		    fillColor: 'lightgray',
+			fontSize: 14,
+			color: 'black',
+			bold: true,
+			margin: [5, 5, 5, 5],
+			alignment: 'center',
+		},
+		table: {
+			margin: [0, 15, 0, 15],
+		},
+		textStyle: {
+		    fontSize: 12,
+		    color: '#424242',
+			italics: true,
+			bold: true,
+			margin: [3, 3, 3, 3],
+			alignment: 'center',
+		}
+	},
+	defaultStyle: {
+		// alignment: 'justify'
+	}
+	
+}

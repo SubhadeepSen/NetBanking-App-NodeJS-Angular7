@@ -1,0 +1,12 @@
+npm install config
+
+# The config module is used read properties depending upon the running environment.
+
+# For no environment specified --> default.json is read and returns the required value
+# For development environment --> development.json is read and returns the required value
+# For production environment --> production.json is read and returns the required value
+
+# The custom-environment-variables.json file maps the environment variables and returns the value set in environment.
+
+*** In this application I'm using custom-environment-variables.json file to supply the JWT secret key when required from environment variable.
+Note: The application will not start if the 'bankingapp-secretkey' is not set in environment variable.
