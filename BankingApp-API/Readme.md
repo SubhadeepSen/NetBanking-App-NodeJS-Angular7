@@ -1,7 +1,7 @@
 ### Description:
 #### This API is for creating a simple banking application developed in Node JS and secured by JWT token. It includes three independent services, known as *__User-Service__*, *__Account-Service__* and *__Transaction-Service__* which have been developed keeping the concept and design of microservices in mind. Hence, these services can be independently deployed to different servers with minimal configurations. The User-Service takes care of handling user related information, the Account-Service takes care of handling account related information and the Transaction-Service takes care of handling transaction related information. The endpoints /register and /validateuser in User-Service are not secured by JWT token. These three services interact with their corresponding MongoDB collection.
 #### For more design related information, please look into the design documents. 
-https://github.com/SubhadeepSen/Node-JS-Projects/tree/master/Banking%20Application/Design%20Documents
+https://github.com/SubhadeepSen/NetBanking-App-NodeJS-Angular7/tree/master/API-Design%20Documents
 
 ### Technology Used:
 #### Database: MongoDB
