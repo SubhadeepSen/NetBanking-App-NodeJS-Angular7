@@ -1,0 +1,14 @@
+<div class="col-md-4 col-md-offset-4">
+  <div class="alert alert-danger" *ngIf = "errorMsg?.length > 0">
+    <strong>{{errorMsg}}</strong>
+  </div>
+  <div class="form-group">
+    <label for="userId">User ID:</label>
+    <input type="text" class="form-control" id="userId" [(ngModel)] = "loginData.username">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" [(ngModel)] = "loginData.password">
+  </div>
+  <button type="button" class="btn btn-primary" (click) = "loginAction()" style="width: 145px; float: right; height: 45px;">Login</button>
+</div>

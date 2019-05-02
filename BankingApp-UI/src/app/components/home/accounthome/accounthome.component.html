@@ -1,0 +1,13 @@
+  <div style="float:right; background-color: lightgray;">Last Active On: {{lastActive}}</div>
+  <div *ngIf="!isAccountExist" class="col-md-4 col-md-offset-4" style="margin-top: 20px;">
+    <div class="form-group">
+      <label for="closingBalance">Closing Balance:</label>
+      <input type="text" class="form-control" id="closingBalance" [(ngModel)] = "closingBalance">
+    </div>
+    <button type="button" class="btn btn-primary" (click) = "createNewAccount()" style="width: 145px; float: right; height: 45px;">Create Account</button>
+  </div>
+
+  <div *ngIf="isAccountExist" class="col-md-6 col-md-offset-4" style="margin-top: 20px;">
+    <h1>Welcome Mr. {{fullname}}</h1>
+    <h3>Your account balance is only rupees {{closingBalance}}</h3>
+  </div>

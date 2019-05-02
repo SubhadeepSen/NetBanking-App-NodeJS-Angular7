@@ -1,0 +1,54 @@
+<div class="col-md-4 col-md-offset-4">
+  <div class="alert alert-danger" *ngIf = "errorMsg?.length > 0">
+    <strong>{{errorMsg}}</strong>
+  </div>
+  <div class="form-group">
+    <label for="firstname">Firstname:</label>
+    <input type="text" class="form-control" id="firstname" [(ngModel)] = "signupData.firstname">
+  </div>
+  <div class="form-group">
+    <label for="lastname">Lastname:</label>
+    <input type="text" class="form-control" id="lastname" [(ngModel)] = "signupData.lastname">
+  </div>
+  <div class="form-group">
+    <label for="emailId">Email:</label>
+    <input type="email" class="form-control" id="emailId" [(ngModel)] = "signupData.emailId">
+  </div>
+  <div class="form-group">
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" class="form-control" id="dateOfBirth" [(ngModel)] = "signupData.dateOfBirth">
+  </div>
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="username" class="form-control" id="username" [(ngModel)] = "signupData.username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" id="password" [(ngModel)] = "signupData.password">
+  </div>
+  <div class="form-group">
+    <label for="phoneNo">Phone No:</label>
+    <input type="text" class="form-control" id="phoneNo" [(ngModel)] = "signupData.phoneNo">
+  </div>
+  <div class="form-group">
+    <label for="firstline">Address Firstline:</label>
+    <input type="text" class="form-control" id="firstline" [(ngModel)] = "signupData.address.firstline">
+  </div>
+  <div class="form-group">
+    <label for="secondline">Address Secondline:</label>
+    <input type="text" class="form-control" id="secondline" [(ngModel)] = "signupData.address.secondline">
+  </div>
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input type="text" class="form-control" id="city" [(ngModel)] = "signupData.address.city">
+  </div>
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <input type="text" class="form-control" id="country" [(ngModel)] = "signupData.address.country">
+  </div>
+  <div class="form-group">
+    <label for="country">Pin:</label>
+    <input type="text" class="form-control" id="pin" [(ngModel)] = "signupData.address.pin">
+  </div>
+  <button type="button" class="btn btn-primary" (click) = "signupAction()" style="width: 145px; float: right; height: 45px;">Signup</button>
+</div>
