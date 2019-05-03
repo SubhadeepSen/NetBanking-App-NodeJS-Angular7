@@ -24,7 +24,7 @@ userrouter.post('/validateuser', (req, res) => {
            .catch((err) => log.error(`Error in login for username ${loginInfo.username}: ` + err));
 });
 
-userrouter.post('/updatepassword', authTokenValidator, (req, res) => {
+userrouter.post('/updatepassword', (req, res) => {
     let passwordObj = req.body;
     let { error } = userValidator.validateUpdatePasswordSchema(passwordObj);
     if (isNotValidSchema(error, res)) return;
