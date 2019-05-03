@@ -31,4 +31,11 @@ export class UserService {
       .set("x-auth-token", sessionStorage.getItem('auth-token'));
     return this.http.get(this.baseUrl + `/getuserbyusername/${username}`, {headers});
   }
+
+  changePassword(forgotPasswordData){
+    let headers = new HttpHeaders()
+    .set("Content-Type", "application/json")
+    .set("Accept", "application/json");
+  return this.http.post(this.baseUrl + '/updatepassword', JSON.stringify(forgotPasswordData), {headers});
+  }
 }
