@@ -25,4 +25,12 @@ export class AccountService {
       .set("x-auth-token", sessionStorage.getItem("auth-token"));
     return this.http.post(this.baseUrl + '/createnewaccount', JSON.stringify(newAccount), {headers});
   }
+
+  updateLastActiveStatus(accountNo){
+    let headers = new HttpHeaders()
+      .set("Content-Type", "application/json")
+      .set("Accept", "application/json")
+      .set("x-auth-token", sessionStorage.getItem("auth-token"));
+    return this.http.get(this.baseUrl + `/lastactivated/${accountNo}`, {headers});
+  }
 }

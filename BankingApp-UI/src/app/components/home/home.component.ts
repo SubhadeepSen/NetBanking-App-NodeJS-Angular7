@@ -1,3 +1,4 @@
+import { AccountService } from "./../../services/account.service";
 import { Router } from "@angular/router";
 import { AuthService } from "./../../services/auth.service";
 import { Component, OnInit } from "@angular/core";
@@ -13,7 +14,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router,
-    private userService: UserService
+    private userService: UserService,
+    private accountService: AccountService
   ) {
     this.retrieveFullName();
   }
@@ -30,6 +32,8 @@ export class HomeComponent implements OnInit {
     }
   }
   logoutAction() {
+    let accountNo = JSON.parse(sessionStorage.getItem("accountInfo")).accountNo;
+    this.accountService.updateLastActiveStatus(accountNo).subscribe(res => {});
     this.authService.logoutSession();
     this.router.navigate(["login"]);
   }

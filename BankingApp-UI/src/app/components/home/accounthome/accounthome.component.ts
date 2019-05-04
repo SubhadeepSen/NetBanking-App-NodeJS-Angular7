@@ -11,14 +11,11 @@ import { Router } from '@angular/router';
 export class AccounthomeComponent implements OnInit {
   private isAccountExist: boolean;
   private closingBalance: string = "500";
-  fullname = sessionStorage.getItem("fullname");
-  lastActive = '';
+  fullname:string;
+  lastActive:string;
 
   constructor(private accountService: AccountService, private router:Router) {
     this.retrieveAccountInfo();
-    if(sessionStorage.getItem('accountInfo')){
-      this.lastActive = new String(JSON.parse(sessionStorage.getItem('accountInfo')).lastActive).split('T')[0];
-    }
   }
 
   ngOnInit() {}
@@ -27,7 +24,9 @@ export class AccounthomeComponent implements OnInit {
     let username = sessionStorage.getItem("username");
     this.accountService.retrieveAccountInfoByUsername(username).subscribe(
       (res: any) => {
+        this.fullname = sessionStorage.getItem("fullname");
         this.closingBalance = res.accountDetails.closingBalance;
+        this.lastActive = new String(res.accountDetails.lastActive).replace('T', '|').split('.')[0];
         sessionStorage.setItem("accountInfo", JSON.stringify(res.accountDetails));
         this.isAccountExist = true;
       },
@@ -53,4 +52,5 @@ export class AccounthomeComponent implements OnInit {
         });
     }
   }
+
 }
