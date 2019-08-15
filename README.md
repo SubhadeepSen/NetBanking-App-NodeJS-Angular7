@@ -8,23 +8,23 @@
 #### Language: Javascript (Node JS)
 
 ### Node JS Modules:
-+ *__express:__* A Node JS module to develop RESTFul Web Services(API) and Web Applications(MVC). Here I have used it for developing RESTFul API.
++ *__`express:`__* A Node JS module to develop RESTFul Web Services(API) and Web Applications(MVC). Here I have used it for developing RESTFul API.
 
-+ *__joi:__* A Node JS module to validate schemas. Here I have used it to validate the request body as input.
++ *__`joi:`__* A Node JS module to validate schemas. Here I have used it to validate the request body as input.
 
-+ *__mongoose:__* A Node JS module to connect with the MongoDB server and perform operations on MongoDB.
++ *__`mongoose:`__* A Node JS module to connect with the MongoDB server and perform operations on MongoDB.
 
-+ *__bcrypt:__* A Node JS module to encrypt and decrypt. Here I have used it to encrypt the user password at the time of registering and compare it at the time of login.
++ *__`bcrypt:`__* A Node JS module to encrypt and decrypt. Here I have used it to encrypt the user password at the time of registering and compare it at the time of login.
 
-+ *__jsonwebtoken:__* A Node JS module to generate JWT token and to verify the provided token. Here I have used to it generate JWT token on successful login and to verify each endpoint at the time of request.
++ *__`jsonwebtoken:`__* A Node JS module to generate JWT token and to verify the provided token. Here I have used to it generate JWT token on successful login and to verify each endpoint at the time of request.
 
-+ *__morgan:__* A Node JS module to log http request and respone. Here I have used it for development purpose.
++ *__`morgan:`__* A Node JS module to log http request and respone. Here I have used it for development purpose.
 
-+ *__axios:__* A Node JS module to make external API calls. Here I have used it to call transaction service from account service at the time of transaction.
++ *__`axios:`__* A Node JS module to make external API calls. Here I have used it to call transaction service from account service at the time of transaction.
 
-+ *__config:__* A Node JS module to load project related configuration json files located inside config folder depending upon the application running environment (development, production). It also helps to read the OS custom environment variables by the *custom-environment-variables.json* file. Here I have used it to read project related configurations and to read the secret key set in OS environment variable to generate JWT token.
++ *__`config:`__* A Node JS module to load project related configuration json files located inside config folder depending upon the application running environment (development, production). It also helps to read the OS custom environment variables by the *custom-environment-variables.json* file. Here I have used it to read project related configurations and to read the secret key set in OS environment variable to generate JWT token.
 
-+ *__pdfmake:__* A Node JS module to generate PDF document. Here I have used to generate transaction summary pdf document.
++ *__`pdfmake:`__* A Node JS module to generate PDF document. Here I have used to generate transaction summary pdf document.
 
 ### Instructions for BankingApp-API:
 1.	Open command prompt and go inside the root of the project. (where main.js is located)
@@ -44,7 +44,7 @@
 
 ## Instructions for UI
 
-- Open command prompt pointing to Message-Queue-Manager-UI directory
+- Open command prompt pointing to BankingApp-UI directory
 - Run ___npm install___ to build the project
 - Run ___npm start___ to deploy the UI application
 - Open __http://localhost:4200/__ to launch the Application
