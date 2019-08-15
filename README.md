@@ -47,6 +47,6 @@
 - Open command prompt pointing to BankingApp-UI directory
 - Run ___npm install___ to build the project
 - Run ___npm start___ to deploy the UI application
-- Open __http://localhost:4200/__ to launch the Application
+- Open __http://localhost:4200/NetBanking/__ to launch the Application
 
 <div style="text-align:center"><img src="https://github.com/SubhadeepSen/NetBanking-App-NodeJS-Angular7/blob/master/NetBanking-UI.jpg" /></div>
